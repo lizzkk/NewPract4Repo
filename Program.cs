@@ -1,10 +1,10 @@
 ﻿string date = "26/11/2024";
-DateOnly date1 = DateOnly.ParseExact(date, "d/MM/yyyy");
+DateOnly date1 = DateOnly.ParseExact(date, "dd/MM/yyyy");
 Console.WriteLine($"Дата(ParseExact): {date1}");
 
 string date2 = "2024-11-26";
 DateOnly date3 = DateOnly.Parse(date);
-Console.WriteLine($"Дата(Parse): {date1}");
+Console.WriteLine($"Дата(Parse): {date3}");
 
 string time = "06:51:00";
 if (TimeOnly.TryParse(time, out TimeOnly time1))
